@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Task Analyzer</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h1>Smart Task Analyzer</h1>
+
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Task Title" required>
+    <input type="date" id="due_date">
+    <input type="number" id="hours" placeholder="Estimated Hours" required>
+    <input type="number" id="importance" placeholder="Importance (1-10)" required>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <textarea id="jsonInput" placeholder="Paste JSON array of tasks"></textarea>
+  <button id="analyzeBtn">Analyze Tasks</button>
+
+  <select id="strategy">
+    <option value="smart_balance">Smart Balance</option>
+    <option value="fastest_wins">Fastest Wins</option>
+    <option value="high_impact">High Impact</option>
+    <option value="deadline_driven">Deadline Driven</option>
+  </select>
+
+  <div id="results"></div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
