@@ -1,37 +1,42 @@
-# Python
+# --- Python / Django ---
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
 *.so
 *.egg-info/
-*.egg
-
-# Virtual environment
-venv/
-ENV/
-env/
-*.venv/
-
-# Django stuff
 *.log
-*.pot
-*.pyc
 db.sqlite3
 media/
 staticfiles/
+*.pot
+*.mo
 
-# IDE/editor configs
+# --- Virtual environments ---
+venv/
+env/
+*.env
+
+# --- IDE / Editor configs ---
 .vscode/
 .idea/
+*.iml
 *.swp
 *.swo
 
-# OS files
+# --- Node / Frontend ---
+node_modules/
+dist/
+build/
+*.lock
+*.cache
+coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS files ---
 .DS_Store
 Thumbs.db
-
-# Node / frontend (if applicable)
-node_modules/
-build/
-dist/
+ehthumbs.db
+Icon?
